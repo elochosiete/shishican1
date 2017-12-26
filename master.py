@@ -36,7 +36,7 @@ def processrequest(req):
         speech = "你超老!但是你還是人~"
     elif age < 30 & age>0:
         speech = "肖廉欸!去讀期末啦!"
-    else
+    else:
         speech = "你是人嗎!"
 
     return{
