@@ -32,9 +32,9 @@ def processrequest(req):
     print("Request")
     print(json.dumps(req, indent =4))
     age = data.get("result").get("parameters").get("age").get("amount")
-    if age > 30 && age < 130:
+    if age > 30 & age < 130:
         speech = "你超老!但是你還是人~"
-    elif age < 30 && age>0:
+    elif age < 30 & age>0:
         speech = "肖廉欸!去讀期末啦!"
     else
         speech = "你是人嗎!"
