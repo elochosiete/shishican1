@@ -31,7 +31,7 @@ def webhook():
 def processrequest(req):
     print("Request")
     print(json.dumps(req, indent =4))
-    age = data.get("result").get("parameters").get("age")
+    age = data.get("result").get("parameters").get("age").get("amount")
     if age > 30 && age < 130:
         speech = "你超老!但是你還是人~"
     elif age < 30 && age>0:
