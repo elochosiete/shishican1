@@ -9,9 +9,9 @@ from urllib.error import HTTPError
 import json
 import os
 
-from flask import flask
-from flask import request
-from flask import make_response
+from Flask import Flask
+from Flask import request
+from Flask import make_response
 
 # Flask app should start in gobal layout
 app = Flask (__name__)
